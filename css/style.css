@@ -1,0 +1,90 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkout h1 {
+    color: #4E5150;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 64px 0 51px 0;
+}
+
+h3 {
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+label {
+    color: #4F4F4F;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+input {
+    width: 465px;
+    height: 56px;
+    border-radius: 12px;
+    border: 1px solid #828282;
+    margin: 10px 0 20px 0;
+}
+
+.adress {
+    display: grid;
+    gap: 10px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.country select {
+    width: 217px;
+    height: 56px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    width: 21px;
+    height: 21px;
+    margin: 0 11px 0 0;
+}
+
+.checkout button {
+    width: 166px;
+    height: 54px;
+    border: none;
+    border-radius: 12px;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;    background-color: #F2994A;
+
+}
+
+.products img {
+    width: 134.206px;
+    height: 136.274px;
+    transform: rotate(-0.02deg);
+    flex-shrink: 0;
+}
