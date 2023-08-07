@@ -15,18 +15,18 @@
 
 <body>
   <h1>Checkout</h1>
-  <div class="container">
+  <div class="container"> 
     <div class="checkout">
       <div class="contact">
         <h3>Contact information</h3>
         <form action="">
           <div>
             <label for="email">E-mail</label><br>
-            <input type="email" placeholder="Enter your email...">
+            <input type="email" placeholder="Enter your email..." required>
           </div>
           <div>
             <label for="phone">Phone</label><br>
-            <input type="tel" placeholder="Enter your phone...">
+            <input type="tel" placeholder="Enter your phone..." readonly>
           </div>
         </form>
       </div>
@@ -35,21 +35,21 @@
           <h3>Shipping address</h3>
           <div>
             <label for="name">Full name</label><br>
-            <input type="name" name="" id="name" placeholder="Your Full name ...">
+            <input type="name" name="" id="name" placeholder="Your Full name ..." required>
           </div>
           <div>
             <label for="address">Address</label><br>
-            <input type="address" placeholder="Your Address">
+            <input type="address" placeholder="Your Address" required>
           </div>
           <div>
             <label for="city">City</label><br>
-            <input type="city" name="" id="" placeholder="Your city...">
+            <input type="city" name="" id="" placeholder="Your city..." required>
           </div>
         </div>
         <div class="fila">
           <div class="country">
             <label for="country">Country</label><br>
-            <select name="country" class="form-control" id="country">
+            <select name="country" class="form-control" id="country" required>
               <option value="0" label="Select a country ... " selected="selected">Select a country ... </option>
               <optgroup id="country-optgroup-Africa" label="Africa">
                 <option value="DZ" label="Algeria">Algeria</option>
@@ -321,11 +321,11 @@
           </div>
           <div class="postalCode">
             <label for="postal Code">Postal code</label><br>
-            <input type="text" name="saves" id="" placeholder="Your postal code ...">
+            <input type="text" name="saves" id="" placeholder="Your postal code ..." required>
           </div>
         </div>
         <div class="checkbox">
-          <input type="checkbox" name="" id="checkbox">
+          <input type="checkbox" name="" id="checkbox" required>
           <label for="checkbox">Save this information for next time</label>
         </div>
       </div>
@@ -337,9 +337,9 @@
         <div>
           <h2>Vintage Backbag</h2>
           <p>$54.99 <span>$94.99</span></p>
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
+          <button class="btnMenos">-</button>
+          <span class="cantidad">0</span>
+          <button class="btnMas">+</button>
         </div>
       </div>
       <div class="products">
@@ -355,16 +355,19 @@
       <div class="price">
         <div>
           <h3>shipping</h3>
-          <p>$19</p>
+          <p class="priceItem">$19</p>
         </div>
         <div>
           <h3>total</h3>
-          <p>$148.98</p>
+          <p><span id="precioTotal"></span></p>
         </div>
       </div> 
     </div>
   </div>
-  <div class="footer"></div>
+  <div class="footer">
+    <p>create by <a href="">wadog</a> - <a href="">DevChallenges.io</a></p>
+    <div class="ejemplo"></div>
+  </div>
 </body>
-
+<script src="js/index.js"></script>
 </html>
